@@ -1,5 +1,7 @@
 package br.com.pedrocarmona.testbackend.controller;
 
+import java.io.IOException;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -19,14 +21,9 @@ public class QueryController {
     QueryService queryService;
 
     @GetMapping
-    private ResponseEntity<QueryResponse> getQuestions(@RequestParam String searchParam){
-        try{
-            QueryResponse queryResponse = queryService.search(searchParam);
-            return new ResponseEntity<>(queryResponse, HttpStatus.OK);
-        } catch(Exception e){
-            e.printStackTrace();
-            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
-        }
+    private ResponseEntity<QueryResponse> getQuestions(@RequestParam String searchParam) throws IOException{
+        QueryResponse queryResponse = queryService.search(searchParam);
+        return new ResponseEntity<>(queryResponse, HttpStatus.OK);
     }
 
 }

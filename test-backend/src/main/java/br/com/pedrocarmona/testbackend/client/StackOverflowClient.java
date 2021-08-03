@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 
-@FeignClient(name = "StackOverflowClient", url = "${api.url}")
+@FeignClient(name = "StackOverflowClient", url = "${api-param.url}")
 public interface StackOverflowClient {
     
     @GetMapping(value="")
