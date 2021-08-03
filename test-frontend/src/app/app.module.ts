@@ -1,11 +1,14 @@
 import { NgModule } from '@angular/core';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule } from '@angular/fire/auth';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { AuthenticationComponent } from './components/authentication/authentication.component';
+import { HomeComponent } from './components/home/home.component';
 
 var firebaseConfig = {
   apiKey: "AIzaSyDIYDVRPor5dPEbh8JInlcDXKs0k7WRezo",
@@ -20,10 +23,13 @@ var firebaseConfig = {
   declarations: [
     AppComponent,
     AuthenticationComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireAuthModule
   ],

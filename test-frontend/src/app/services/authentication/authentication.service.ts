@@ -15,8 +15,10 @@ export class AuthenticationService {
 
   public async signin() {
     const provider = new firebase.auth.GoogleAuthProvider();
-    const credential = await this.afAuth.signInWithPopup(provider).then((result) => {
-      console.log("Deu certo!");
+    await this.afAuth.signInWithPopup(provider).then((result) => {
+      if(result){
+        this.router.navigate(['/home'])
+      }
     });
   }
 
