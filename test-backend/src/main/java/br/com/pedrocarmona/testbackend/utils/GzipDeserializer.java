@@ -28,7 +28,7 @@ public class GzipDeserializer {
             return new String(output);
         } catch(IOException e){
             e.printStackTrace();
-            throw new ZipException("Failure to deserialize the Gzip response!");
+            throw new ZipException(e.getMessage());
         }
     }
 

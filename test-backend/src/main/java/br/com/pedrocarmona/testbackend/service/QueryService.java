@@ -42,11 +42,11 @@ public class QueryService {
         }
         catch(ZipException e){
             e.printStackTrace();
-            throw e;
+            throw new IOException("Failure to deserialize the Gzip response. Cause: " + e.getMessage());
         }
         catch(JsonProcessingException e){
             e.printStackTrace();
-            throw e;
+            throw new IOException("Failure to deserialize the JSON into a POJO. Cause: " + e.getMessage());
         }
 
         return queryResponse;
