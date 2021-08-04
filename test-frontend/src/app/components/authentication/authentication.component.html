@@ -1,5 +1,24 @@
-<div class="auth">
+<body class = "body">
+  <div class = "left-div">
+    <div class = "ibm-logo-div">
+      <img src="../../../assets/ibm.svg.png" class = "ibm-logo-img">
+    </div>
+  </div>
+  <div class = "right-div">
+    <div class = "login">
+      <div class = "login-container">
+        <span class = "login-welcome">WELCOME</span>
+        <span class = "login-warning">Please click the button below to sign in.</span>
+        <button (click)="authentication.signin()" class = "login-button">
+          <img src='../../../assets/google.svg.png' class = "login-img">
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+
+<!-- <div class="auth">
     <button (click)="authentication.signin()">
       Logar
     </button>
-</div>
+</div> -->

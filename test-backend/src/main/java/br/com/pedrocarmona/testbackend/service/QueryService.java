@@ -1,7 +1,6 @@
 package br.com.pedrocarmona.testbackend.service;
 
 import java.io.IOException;
-import java.net.ConnectException;
 import java.util.zip.ZipException;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
