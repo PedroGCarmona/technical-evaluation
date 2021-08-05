@@ -9,7 +9,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { AuthenticationComponent } from './components/authentication/authentication.component';
 import { HomeComponent } from './components/home/home.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 var firebaseConfig = {
   apiKey: "AIzaSyDIYDVRPor5dPEbh8JInlcDXKs0k7WRezo",
@@ -24,7 +23,7 @@ var firebaseConfig = {
   declarations: [
     AppComponent,
     AuthenticationComponent,
-    HomeComponent
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,7 +32,6 @@ var firebaseConfig = {
     HttpClientModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireAuthModule,
-    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

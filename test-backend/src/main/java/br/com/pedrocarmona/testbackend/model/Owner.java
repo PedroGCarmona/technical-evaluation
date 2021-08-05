@@ -12,16 +12,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Owner {
-    @JsonProperty("account_id")
-    private Long accountId;
-    @JsonProperty("reputation")
-    private Long reputation;
-    @JsonProperty("user_id")
-    private Long userId;
-    @JsonProperty("user_type")
-    private String userType;
-    @JsonProperty("accept_rate")
-    private Long acceptRate;
     @JsonProperty("profile_image")
     private String profileImage;
     @JsonProperty("display_name")

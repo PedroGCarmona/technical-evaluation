@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen');
 
-/* .auth{
-    margin-top: 20%;
-    text-align: center;
-} */
-
 .body{
     display: flex;
     flex-direction: row;
@@ -46,7 +41,7 @@
 .login-welcome{
     font-family: ('https://fonts.googleapis.com/css2?family=Oxygen');
     font-weight: 800;
-    font-size: 32px;
+    font-size: 4em;
     letter-spacing: 0.355em;
     color: #1F70C1;
     margin-bottom: 5%;
@@ -55,26 +50,40 @@
 .login-warning{
     font-family: ('https://fonts.googleapis.com/css2?family=Oxygen');
     font-weight: 600;
-    font-size: 16px;
+    font-size: 1em;
     letter-spacing: 0.355em;
     color: #fff;
 }
 
 .login-button{
     margin: 10% 40%;
-    background-color: #08335F;
-    border: #08335F;
+    border: 4px solid #1F70C1;
     cursor: pointer;
-    height: 20%;
-    width: 20%;
+    height: 11.5em;
+    width: 12em;
+    border-radius: 50%;
+    background-color: #ffff;
+    transition: filter 0.8s;
 }
 
-.login-button:active{
-    background-color: #1F70C1;
-    border: #1F70C1;
+
+.login-button:hover {
+  background-color: #87CEEB;
+  filter: brightness(0.9);
 }
 
 .login-img{
+    height: 9em;
+}
+
+.footer {
+    font-family: ('https://fonts.googleapis.com/css2?family=Oxygen');
+    font-weight: 600;
+    font-size: 1.3rem;
+    letter-spacing: 0.355em;
+    color: #fff;
     width: 100%;
-    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
