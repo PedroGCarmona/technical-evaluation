@@ -13,7 +13,7 @@ export class HomeService {
 
   public search(searchParam: string): Observable<Query>{
     let params = new HttpParams().set('searchParam', searchParam);
-    let result =  this.httpClient.get<Query>("http://localhost:8080/", {params: params});
+    let result =  this.httpClient.get<Query>("http://pedrogcarmona-backend.us-east-1.elasticbeanstalk.com/", {params: params});
     return result;
   }
 
