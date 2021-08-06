@@ -1,3 +1,6 @@
+server:
+    port: 5000
+
 api-param:
     url: https://api.stackexchange.com/2.3/search/advanced
     siteParam: stackoverflow
